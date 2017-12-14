@@ -544,7 +544,7 @@ python manage.py createsuperuser
 Теперь подключим наш `venv` к серверу:
 
 
-![pythonanywhere_web_tab_virtualenv](https://github.com/Study-Projects/database_tutorial/blob/master/imgpythonanywhere_web_tab_virtualenv.png)
+![pythonanywhere_web_tab_virtualenv](https://github.com/Study-Projects/database_tutorial/blob/master/img/pythonanywhere_web_tab_virtualenv.png)
 
 В секции *virtualenv* кликните по красному кресту, после чего введите путь до своего venv на сервере в соответствии с этим образцом.
 
