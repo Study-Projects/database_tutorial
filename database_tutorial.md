@@ -604,7 +604,7 @@ cd my-first-blog
 
 virtualenv --python=python3.6 venv
 source venv/bin/activate
-pip install django~=1.11.0
+pip install django==1.11.0
 ```
 
 Если вы увидели ошибку установки `wheel`, наберите `pip install wheel`, а затем повторите попытку установки django.
