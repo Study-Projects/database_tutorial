@@ -689,7 +689,19 @@ def post_edit(request, pk):
 
 На самом деле, шаблон нужен только один. В целом для изменения сущности, нам не важно, редактирование это или создание. Более того, зачастую нам даже не важно какая конкретная сущность должна быть представлена, т.к. в представлении мы передаем готовую Django форму, нам не нужно создавать её самостоятельно.
 
-TODO: вставить код для шаблона
+Создадим файл `blog/post_edit.html` с таким содержимым:
+
+```
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<h1>New post</h1>
+	<form method="POST" class="post-form">{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" class="save btn btn-default">Save</button>
+	</form>
+{% endblock %}
+```
 
 ## Глава 10. Публикация.
 
